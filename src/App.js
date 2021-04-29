@@ -1,23 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { useEffect, useState } from "react";
+
+function BodyForm(props) {
+
+  const handleEmailChange = (event) => {
+    props.setEmail(event.target.value);
+  }
+
+  const handlePasswordChange = ({ target: { value } }) => {
+    props.setPassword(value)
+  }
+
+  return (
+    <div>
+      <label>
+        Correo
+        <input type="email" value={props.email} onChange={handleEmailChange} />
+      </label>
+      <label>
+        Contrasena
+        <input type="password" value={props.password} onChange={handlePasswordChange} />
+      </label>
+    </div>
+  );
+}
 
 function App() {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLogged, setIslogged] = useState(false)
+
+  const handleFormSubmit = (event) => {
+    console.log(email + password)
+    event.preventDefault();
+  }
+
+  const handleLoginClik = (event) => {
+    setIslogged(true)
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form onSubmit={handleFormSubmit}>
+        <h2>Iniciar Sesion</h2>
+        <BodyForm email={email} password={password} setEmail={setEmail} setPassword={setPassword} />
+        <button onClick={handleLoginClik}>
+          Enter
+          </button>
+        {isLogged ? <h2>Logeado exitosamente</h2> : undefined}
+        {isLogged && <h2>Logeado exitosamente 2</h2> }
+      </form>
     </div>
   );
 }
