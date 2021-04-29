@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to learning-react 👋</h1>
+<h1 align="center">Bienvenido a aprendiendo react 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -6,14 +6,23 @@
   </a>
 </p>
 
-> Aprendiendo conceptos basicos de react.
-  - Como instalar React
-  - Componentes en react
-  - Ciclo de vida de los componentes en react
+> El siguente documento se basa en la documentacion ofical de react y nos ayuda a entender los conceptos basicos de react con pequeños ejemplos.
+
+  - ¿Y eso del Virtual DOM de React qué es?
+  - Como Instalar React
+  - Componentes En React
+  - Ciclo De Vida De Los Componentes En React
   - Listas y Keys
+
+## ¿Y eso del Virtual DOM de React qué es?
+
+> Una introducción al Virtual DOM de React y la forma en que optimiza el pintado de las aplicaciones
+  * Leer mas: https://latteandcode.medium.com/y-eso-del-virtual-dom-de-react-qu%C3%A9-es-3feed6366925
 
 ## Como instalar React
 
+> Necesitarás tener Node >= 10.16 y npm >= 5.6 instalados en tu máquina.
+  * Descargar Node: https://nodejs.org/en/
 ```sh
   npx create-react-app my-app
   cd my-app
