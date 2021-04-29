@@ -30,7 +30,7 @@ npm run test
 
 👤 **Duvan Botello**
 
-* Website: https://www.linkedin.com/in/duvan-botello-ba402819b/
+* Website: https://www.duvanbotello.co/
 * Github: [@duvanbotello](https://github.com/duvanbotello)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/duvan-botello-ba402819b\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/duvan-botello-ba402819b\/)
 
